@@ -1,3 +1,85 @@
-h1 {
-  color: blueviolet;
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* header section */
+header {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+/* nav section */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 10px auto 10px auto;
+}
+.logo-container {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.logo-container > img {
+  transform: scale(0.9);
+  margin-right: 10px;
+}
+.logo-container > h1 {
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 800;
+}
+.logo-container > h1 > span {
+  color: #ff5400;
+}
+.menu-container {
+  list-style: none;
+  display: flex;
+}
+.menu-container li {
+  margin-left: 30px;
+  color: rgb(66, 66, 71);
+  font-family: Mulish;
+  font-size: 18px;
+  font-weight: 400;
+}
+.menu-container .home {
+  color: #ff5400;
+}
+.dot-menu {
+  display: none;
+}
+/* tablet section */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+  /* header section */
+  /* nav section */
+  .menu-container {
+    display: none;
+  }
+  .dot-menu {
+    display: block;
+  }
+}
+/* mobile section */
+@media screen and (max-width: 576px) {
+  /* header section */
+  /* nav section */
+  .menu-container {
+    display: none;
+  }
+  .dot-menu {
+    display: block;
+  }
+  .logo-container > img {
+    transform: scale(0.6);
+    margin-right: 5px;
+  }
+  .logo-container > h1 {
+    font-family: Mulish;
+    font-size: 28px;
+    font-weight: 800;
+  }
 }
